@@ -1,0 +1,13 @@
+
+@import "base.css";
+@import "fonts.css";
+@import "links.css";
+@import "structure.css";
+
+body {
+  background-color: gray;
+
+  @media (min-width: 600px) {
+    background-color: white;
+  }
+}

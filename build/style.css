@@ -1,0 +1,10 @@
+@import "links.css";
+
+body {
+  --width: 600px;
+  background-color: gray;
+
+  @media (min-width: 600px) {
+    background-color: white;
+  }
+}
