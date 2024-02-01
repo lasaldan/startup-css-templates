@@ -1,0 +1,6 @@
+[data-section-type="hero"] {
+  background-image: url(https://picsum.photos/id/14/1200/1200/?blur);
+  background-position: center center;
+  padding: var(--spacing-xxl);
+  color: white;
+}

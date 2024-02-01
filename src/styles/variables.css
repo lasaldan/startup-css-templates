@@ -1,0 +1,52 @@
+:root {
+  /* Palette */
+  --color-bg: #f5f5f5;
+  --color-text: #333333;
+  --color-primary: #f8049c;
+  --color-secondary: #35c2d9;
+  --color-tertiary: #ff4e50;
+
+  /* Typography */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;  
+  --font-weight-bold: 700;
+  --font-size-xxs: 1.2rem;
+  --font-size-xs: 1.4rem;
+  --font-size-s: 1.6rem;
+  --font-size-m: 1.8rem;
+  --font-size-l: 2.4rem;
+  --font-size-xl: 3.2rem;
+  --font-size-xxl: 4.8rem;
+  --font-sans: 'Josefin Sans', sans-serif;
+  --font-serif: 'Josefin Slab', serif;
+
+  /* Spacing */
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 1.5rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+
+  /* Breakpoints */
+  --breakpoint-phone: 600px;
+  --breakpoint-tablet: 900px;
+  --breakpoint-desktop: 1200px;
+  --breakpoint-large: 1800px;
+
+  /* Layout */
+  --max-width: 1200px;
+
+  /* Shadows */
+  --shadow-small: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 15px 30px rgba(0, 0, 0, 0.1);
+  --shadow-large: 0 25px 50px rgba(0, 0, 0, 0.1);
+
+  /* Border radius */
+  --border-radius-s: 4px;
+  --border-radius-m: 6px;
+  --border-radius-l: 8px;
+  --border-radius-xl: 12px;
+}
