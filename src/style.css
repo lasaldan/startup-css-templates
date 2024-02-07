@@ -5,6 +5,8 @@
 @import "styles/layout.css";
 @import "styles/forms.css";
 @import "styles/cards.css";
+@import "styles/media-queries.css";
+@import "styles/primary-nav.css";
 
 @import "styles/sections/hero.css";
 @import "styles/sections/caption-figure.css";

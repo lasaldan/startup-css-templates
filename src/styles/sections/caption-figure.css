@@ -1,6 +1,5 @@
 [data-section-type="caption-figure"] {
   img {
-    max-width: 350px;
     object-fit: contain;
     object-position: top;
   }

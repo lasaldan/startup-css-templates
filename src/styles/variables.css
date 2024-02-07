@@ -2,9 +2,12 @@
   /* Palette */
   --color-bg: #f5f5f5;
   --color-text: #333333;
-  --color-primary: #f8049c;
+  --color-primary: #047af8;
   --color-secondary: #35c2d9;
-  --color-tertiary: #ff4e50;
+  --color-tertiary: #6ec05a;
+  --color-gray-light: #e0e0e0;
+  --color-gray: #aaaaaa;
+  --color-gray-dark: #777777;
 
   /* Typography */
   --font-weight-light: 300;
@@ -31,10 +34,11 @@
   --spacing-xxl: 4rem;
 
   /* Breakpoints */
-  --breakpoint-phone: 600px;
-  --breakpoint-tablet: 900px;
-  --breakpoint-desktop: 1200px;
-  --breakpoint-large: 1800px;
+  --breakpoint-xs: 600px;
+  --breakpoint-s: 900px;
+  --breakpoint-m: 1200px;
+  --breakpoint-l: 1500px;
+  --breakpoint-xl: 1800px;
 
   /* Layout */
   --max-width: 1200px;

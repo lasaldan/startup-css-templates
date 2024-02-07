@@ -87,6 +87,69 @@
 
 
 
+/* Sizing */
+.full-width {
+  width: 100%;
+}
+.full-height {
+  height: 100%;
+}
+.w-50 {
+  width: 5rem;
+}
+.w-100 {
+  width: 10rem;
+}
+.w-200 {
+  width: 20rem;
+}
+.w-300 {
+  width: 30rem;
+}
+.w-400 {
+  width: 40rem;
+}
+.w-500 {
+  width: 50rem;
+}
+.w-600 {
+  width: 60rem;
+}
+.w-700 {
+  width: 70rem;
+}
+.w-800 {
+  width: 80rem;
+}
+.w-900 {
+  width: 90rem;
+}
+.w-1000 {
+  width: 100rem;
+}
+
+
+
+/* Aspect */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+.aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}
+.aspect-3-2 {
+  aspect-ratio: 3 / 2;
+}
+.aspect-2-1 {
+  aspect-ratio: 2 / 1;
+}
+
+
+
+
 /* Font */
 .font-serif {
   font-family: var(--font-serif) !important;
@@ -98,6 +161,9 @@
 
 
 /* Margin */
+.m-0-a {
+  margin: auto;
+}
 .m-t-1 {
   margin-top: 1rem;
 }

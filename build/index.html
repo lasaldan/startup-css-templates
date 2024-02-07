@@ -4,8 +4,38 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
-<body>
+<body class="m-t-1">
+  <div id="primary-nav">
+    <div class="container flex flex-jcsb flex-aic m-0-a">
+      <a class="logo" href="#"><img src="https://via.placeholder.com/700" /></a>
+      <div class="mobile-nav-button" tabindex="0">
+        <ul class="root-nav flex flex-jcc flex-aic">
+          <li tabindex="0">
+            <span>Features </span>
+            <ul>
+              <li>
+                <a href="#anchor-a">Feature 1</a>
+              </li>
+              <li>
+                <a href="#anchor-b">Feature 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#anchor-b">Pricing</a>
+          </li>
+          <li>
+            <a href="#anchor-c">Contact</a>
+          </li>
+          <li class="button">
+            <a href="#anchor-d">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <section class="flex flex-column" data-section-type="hero">
     <h1>
       Startup Template
@@ -17,9 +47,12 @@
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
     </p>
   </section>
-  <section class="rounded oh" data-section-type="caption-figure">
-    <figure class="flex flex-reverse">
-      <img src="https://via.placeholder.com/350" /><figcaption class="m-x-3 flex flex-column flex-jcc">
+  <section class="rounded oh" data-section-type="caption-figure" id="anchor-a">
+    <figure class="flex flex-reverse sm-flex-column sm-flex-aic">
+      <div class="flex-1 aspect-square">
+        <img class="w-400 xs-full-width" src="https://via.placeholder.com/700" />
+      </div>
+      <figcaption class="m-3 flex flex-column flex-jcc flex-2">
         <h3>
           Feature
         </h3>
@@ -29,9 +62,42 @@
       </figcaption>
     </figure>
   </section>
-  <section data-section-type="caption-figure">
-    <figure class="flex">
-      <img src="https://via.placeholder.com/350" /><figcaption class="m-x-3 flex flex-column flex-jcc">
+  <section class="rounded oh" data-section-type="caption-figure">
+    <figure class="flex sm-flex-column sm-flex-aic">
+      <div class="flex-1 aspect-square">
+        <img class="w-400 xs-full-width" src="https://via.placeholder.com/700" />
+      </div>
+      <figcaption class="m-3 flex flex-column flex-jcc flex-2">
+        <h3>
+          Feature
+        </h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+        </p>
+      </figcaption>
+    </figure>
+  </section>
+  <section class="rounded oh" data-section-type="caption-figure" id="anchor-b">
+    <figure class="flex flex-reverse sm-flex-column sm-flex-aic">
+      <div class="flex-1 aspect-square">
+        <img class="w-400 xs-full-width" src="https://via.placeholder.com/700" />
+      </div>
+      <figcaption class="m-3 flex flex-column flex-jcc flex-2">
+        <h3>
+          Feature
+        </h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+        </p>
+      </figcaption>
+    </figure>
+  </section>
+  <section class="rounded oh" data-section-type="caption-figure">
+    <figure class="flex sm-flex-column sm-flex-aic">
+      <div class="flex-1 aspect-square">
+        <img class="w-400 xs-full-width" src="https://via.placeholder.com/700" />
+      </div>
+      <figcaption class="m-3 flex flex-column flex-jcc flex-2">
         <h3>
           Feature
         </h3>

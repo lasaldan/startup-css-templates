@@ -6,22 +6,58 @@ head
   link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"
   link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"
 
-body 
+  meta name="viewport" content="width=device-width, initial-scale=1"
+
+body.m-t-1
+  #primary-nav
+    .container.flex.flex-jcsb.flex-aic.m-0-a
+      a href="#" class="logo"
+        img src="https://via.placeholder.com/700"
+      .mobile-nav-button tabindex="0"
+        ul.root-nav.flex.flex-jcc.flex-aic
+          li tabindex="0"
+            span Features 
+            ul 
+              li: a href="#anchor-a" Feature 1
+              li: a href="#anchor-b" Feature 2
+          li
+            a href="#anchor-b" Pricing
+          li
+            a href="#anchor-c" Contact
+
+          li.button 
+            a href="#anchor-d" Sign Up
+          
+
   section.flex.flex-column data-section-type="hero"
     h1 Startup Template
     h2 The easiest way to start
     p.m-t-4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
-  section.rounded.oh data-section-type="caption-figure"
-    figure.flex.flex-reverse
-      img src="https://via.placeholder.com/350"
-      figcaption.m-x-3.flex.flex-column.flex-jcc
+  section#anchor-a.rounded.oh data-section-type="caption-figure"
+    figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
+      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
+      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
         h3 Feature
         p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
-  section data-section-type="caption-figure"
-    figure.flex
-      img src="https://via.placeholder.com/350"
-      figcaption.m-x-3.flex.flex-column.flex-jcc
+  section.rounded.oh data-section-type="caption-figure"
+    figure.flex.sm-flex-column.sm-flex-aic
+      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
+      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
+        h3 Feature
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+
+  section#anchor-b.rounded.oh data-section-type="caption-figure"
+    figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
+      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
+      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
+        h3 Feature
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+
+  section.rounded.oh data-section-type="caption-figure"
+    figure.flex.sm-flex-column.sm-flex-aic
+      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
+      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
         h3 Feature
         p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
