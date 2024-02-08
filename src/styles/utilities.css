@@ -51,6 +51,10 @@
   flex-direction: row-reverse;
 }
 
+.shadow-small {
+  box-shadow: var(--shadow-small);
+}
+
 
 
 .rounded {
@@ -146,6 +150,60 @@
 .aspect-2-1 {
   aspect-ratio: 2 / 1;
 }
+
+
+
+/* Images */
+.cover {
+  object-fit: cover;
+}
+.contain {
+  object-fit: contain;
+}
+.center {
+  object-position: center;
+}
+.center-top {
+  object-position: top;
+}
+.center-bottom {
+  object-position: bottom;
+}
+.center-left {
+  object-position: left;
+}
+.center-right {
+  object-position: right;
+}
+
+
+
+/* Position */
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+.top-0 {
+  top: 0;
+}
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.left-0 {
+  left: 0;
+}
+
 
 
 

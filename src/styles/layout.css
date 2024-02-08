@@ -1,5 +1,5 @@
 html {
-  scroll-padding-top: 95px;
+  scroll-padding-top: 105px;
 }
 body {
   display: flex;
@@ -7,6 +7,7 @@ body {
   gap: var(--spacing-xxl);
 
   section {
+    width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
     flex: none;

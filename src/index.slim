@@ -8,7 +8,7 @@ head
 
   meta name="viewport" content="width=device-width, initial-scale=1"
 
-body.m-t-1
+body
   #primary-nav
     .container.flex.flex-jcsb.flex-aic.m-0-a
       a href="#" class="logo"
@@ -29,35 +29,52 @@ body.m-t-1
             a href="#anchor-d" Sign Up
           
 
+
   section.flex.flex-column data-section-type="hero"
     h1 Startup Template
     h2 The easiest way to start
     p.m-t-4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
+
+
   section#anchor-a.rounded.oh data-section-type="caption-figure"
     figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
-      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
+      .flex-1.aspect-square: img.w-400.xs-full-width.block-shadow-small src="https://picsum.photos/id/4/800/800"
       figcaption.m-3.flex.flex-column.flex-jcc.flex-2
         h3 Feature
         p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
-  section.rounded.oh data-section-type="caption-figure"
-    figure.flex.sm-flex-column.sm-flex-aic
-      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
-      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
-        h3 Feature
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
-  section#anchor-b.rounded.oh data-section-type="caption-figure"
-    figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
-      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
-      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
-        h3 Feature
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
-  section.rounded.oh data-section-type="caption-figure"
-    figure.flex.sm-flex-column.sm-flex-aic
-      .flex-1.aspect-square: img.w-400.xs-full-width src="https://via.placeholder.com/700"
-      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
-        h3 Feature
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+  section.rounded.oh data-section-type="slider"
+    .slide-window
+      input type='radio' name='slider' value='1' checked='checked'
+      input type='radio' name='slider' value='2'
+      input type='radio' name='slider' value='3'
+
+      .slides
+        figure
+          img src="https://picsum.photos/id/1/1200/1200"
+          figcaption.dark
+            h3 Feature 1
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+
+        figure
+          img src="https://picsum.photos/id/2/1200/1200"
+          figcaption.left
+            h3 Feature 2
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+
+        figure
+          img src="https://picsum.photos/id/3/1200/1200"
+          figcaption.right.dark
+            h3 Feature 3
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+
+
+
+  section.m-y-4.flex.flex-jcsb
+    img.grayscale.rotate-left-sm.shadow-large src="https://picsum.photos/id/15/300/300"
+    img.round.shadow-medium.blur src="https://picsum.photos/id/16/300/300"
+    img.sepia.rounded-xl.rotate-right-xs.shadow-small src="https://picsum.photos/id/17/300/300"
+    
