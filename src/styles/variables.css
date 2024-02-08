@@ -53,4 +53,7 @@
   --border-radius-m: 6px;
   --border-radius-l: 8px;
   --border-radius-xl: 12px;
+
+  /* Layout */
+  --nav-height: 80px;
 }

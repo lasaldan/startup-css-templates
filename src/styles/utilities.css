@@ -218,6 +218,82 @@
 
 
 
+
+/* Text */
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+.taj {
+  text-align: justify;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--color-gray-dark);
+  text-underline-offset: 0.2em;
+}
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+.font-light {
+  font-weight: var(--font-weight-light);
+}
+.font-regular {
+  font-weight: var(--font-weight-regular);
+}
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+
+
+
+
+/* Colors */
+.bg-gray {
+  background-color: var(--color-gray);
+}
+.bg-gray-light {
+  background-color: var(--color-gray-light);
+}
+.bg-gray-dark {
+  background-color: var(--color-gray-dark);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+.bg {
+  background-color: var(--color-bg);
+}
+
+
+
+
+
 /* Margin */
 .m-0-a {
   margin: auto;
