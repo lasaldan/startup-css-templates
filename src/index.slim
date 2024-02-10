@@ -20,7 +20,7 @@ body
             span Features 
             ul 
               li: a href="#caption-figures" Captions + Figures
-              li: a href="#galleries" Feature 2
+              li: a href="#galleries" Image Galleries
           li
             a href="#anchor-b" Pricing
           li
@@ -39,7 +39,7 @@ body
   section#caption-figures.flex.flex-jcc.m-y-4: h2.tac.lines Caption + Figures
 
 
-  section.rounded.oh data-section-type="caption-figure"
+  section.rounded-xl.oh data-section-type="caption-figure"
     figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
       .flex-1.aspect-square: img.w-400.xs-full-width.block-shadow-small src="https://picsum.photos/id/4/800/800"
       figcaption.m-3.flex.flex-column.flex-jcc.flex-2
@@ -63,7 +63,7 @@ body
 
   section#galleries.flex.flex-jcc.m-y-4: h2.tac.braces.round Image Galleries
 
-  section.rounded.oh data-section-type="slider"
+  section.rounded.oh.m-y-5 data-section-type="slider"
     .slide-window
       input type='radio' name='slider' value='1' checked='checked'
       input type='radio' name='slider' value='2'
@@ -88,7 +88,143 @@ body
             h3 Feature 3
             p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
+  section.rounded.m-y-5.xs-flex-column data-section-type="gallery-text"
+    input type='radio' name='gallery-text' value='1' id="gallery-text-1" checked='checked'
+    input type='radio' name='gallery-text' value='2' id="gallery-text-2"
+    input type='radio' name='gallery-text' value='3' id="gallery-text-3"
+    input type='radio' name='gallery-text' value='4' id="gallery-text-4"
+    input type='radio' name='gallery-text' value='5' id="gallery-text-5"
+    input type='radio' name='gallery-text' value='6' id="gallery-text-6"
 
+    .gallery-wrapper
+      .gallery
+        figure
+          img src="https://picsum.photos/id/18/1200/1200"
+
+        figure
+          img src="https://picsum.photos/id/19/1200/1200"
+
+        figure
+          img src="https://picsum.photos/id/20/1200/1200"
+
+        figure
+          img src="https://picsum.photos/id/21/1200/1200"
+          figcaption
+            h3 Feature Details 4
+
+        figure
+          img src="https://picsum.photos/id/22/1200/1200"
+          figcaption
+            h3 Feature Details 5
+
+        figure
+          img src="https://picsum.photos/id/23/1200/1200"
+          figcaption
+            h3 Feature Details 6
+
+
+      .thumbnails 
+        label for="gallery-text-1"
+          img.rounded src="https://picsum.photos/id/18/400/400"
+        label for="gallery-text-2"
+          img.rounded src="https://picsum.photos/id/19/400/400"
+        label for="gallery-text-3"
+          img.rounded src="https://picsum.photos/id/20/400/400"
+        label for="gallery-text-4"
+          img.rounded src="https://picsum.photos/id/21/400/400"
+        label for="gallery-text-5"
+          img.rounded src="https://picsum.photos/id/22/400/400"
+        label for="gallery-text-6"
+          img.rounded src="https://picsum.photos/id/23/400/400"
+
+    .gallery-text 
+      h3 Feature Explanation 
+      p.m-y-2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+      a.button.m-t-2 Learn More
+
+  section.rounded.m-y-5 data-section-type="gallery"
+    input type='radio' name='gallery' value='0' id="gallery-0" checked='checked'
+    input type='radio' name='gallery' value='1' id="gallery-1"
+    input type='radio' name='gallery' value='2' id="gallery-2"
+    input type='radio' name='gallery' value='3' id="gallery-3"
+    input type='radio' name='gallery' value='4' id="gallery-4"
+    input type='radio' name='gallery' value='5' id="gallery-5"
+    input type='radio' name='gallery' value='6' id="gallery-6"
+    input type='radio' name='gallery' value='7' id="gallery-7"
+    input type='radio' name='gallery' value='8' id="gallery-8"
+    input type='radio' name='gallery' value='9' id="gallery-9"
+    input type='radio' name='gallery' value='10' id="gallery-10"
+    input type='radio' name='gallery' value='11' id="gallery-11"
+    input type='radio' name='gallery' value='12' id="gallery-12"
+
+    .thumbnails 
+      label for="gallery-1"
+        img.rounded-xl src="https://picsum.photos/id/10/400/400"
+      label for="gallery-2"
+        img.rounded-xl src="https://picsum.photos/id/11/400/400"
+      label for="gallery-3"
+        img.rounded-xl src="https://picsum.photos/id/12/400/400"
+      label for="gallery-4"
+        img.rounded-xl src="https://picsum.photos/id/13/400/400"
+      label for="gallery-5"
+        img.rounded-xl src="https://picsum.photos/id/14/400/400"
+      label for="gallery-6"
+        img.rounded-xl src="https://picsum.photos/id/15/400/400"
+      label for="gallery-7"
+        img.rounded-xl src="https://picsum.photos/id/16/400/400"
+      label for="gallery-8"
+        img.rounded-xl src="https://picsum.photos/id/17/400/400"
+
+    .gallery
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/10/1200/1200"
+          figcaption
+            h3 Feature Details 1
+
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/11/1200/1200"
+          figcaption
+            h3 Feature Details 2
+
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/12/1200/1200"
+          figcaption
+            h3 Feature Details 3
+
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/13/1200/1200"
+          figcaption
+            h3 Feature Details 4
+
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/14/1200/1200"
+          figcaption
+            h3 Feature Details 5
+
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/15/1200/1200"
+          figcaption
+            h3 Feature Details 6
+
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/16/1200/1200"
+          figcaption
+            h3 Feature Details 7
+
+      label for="gallery-0"
+        figure
+          img src="https://picsum.photos/id/17/1200/1200"
+          figcaption
+            h3 Feature Details 8
+
+  footer 
 
   / section.m-y-4.flex.flex-jcsb.sm-flex-column
   /   img.grayscale.rotate-left-sm.shadow-large src="https://picsum.photos/id/15/300/300"

@@ -1,0 +1,16 @@
+.button {
+    color: white;
+    padding: var(--spacing-s) var(--spacing-m);
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-s);
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 2em;
+    display: inline-block;
+    width: fit-content;
+
+    &:hover {
+        background-color: var(--color-secondary);
+    }
+}

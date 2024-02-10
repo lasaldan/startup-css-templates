@@ -16,4 +16,12 @@ body {
   .container {
     max-width: var(--max-width);
   }
+
+  footer { 
+    margin-top: var(--spacing-xl);
+    height: 400px;
+    background-color: var(--color-gray-light);
+    margin-right: calc(-1 * var(--spacing-m));
+    margin-left: calc(-1 * var(--spacing-m));
+  }
 }

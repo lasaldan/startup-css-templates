@@ -393,3 +393,29 @@
 .m-4 {
   margin: 4rem;
 }
+
+.m-t-5 {
+  margin-top: 5rem;
+}
+.m-b-5 {
+  margin-bottom: 5rem;
+}
+.m-l-5 {
+  margin-left: 5rem;
+}
+.m-r-5 {
+  margin-right: 5rem;
+}
+.m-x-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.m-y-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.m-5 {
+  margin: 5rem;
+}
+
+
