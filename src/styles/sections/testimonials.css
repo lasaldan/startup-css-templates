@@ -1,0 +1,95 @@
+[data-section-type="testimonials"] {
+    .testimonial-avatars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--spacing-xl);
+        gap: 1rem;
+
+        /* label {
+        } */
+
+        label {
+            width: 8rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 2px solid var(--color-gray-light);
+            cursor: pointer;
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            transform: scale(1) translate(0,0);
+
+            &:hover {
+                transform: translate(0,-0.5rem)
+            }
+
+            &:after {
+                content: "";
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+        }
+    }
+
+    & > input[type="radio"] {
+        display: none;
+    }
+    
+    .testimonials {
+        background-color: white;
+        z-index: 1;
+        position: relative;
+    }
+
+    .testimonials blockquote {
+        display: none;
+        padding: var(--spacing-xl);
+        border-radius: var(--border-radius-m);
+        /* box-shadow: var(--shadow-small); */
+        background-color: white;
+        margin: 0;
+        border-left: 5px solid var(--color-primary);
+
+        p {
+            font-size: var(--font-size-l);
+            font-weight: var(--font-weight-light);
+        }
+
+        cite {
+            display: block;
+            margin-top: var(--spacing-m);
+            font-size: var(--font-size-m);
+            font-weight: bold;
+            color: var(--color-gray-dark);
+
+        }
+    }
+
+    input[name="testimonial"]:nth-child(1):checked ~ .testimonial-avatars > label:nth-child(1),
+    input[name="testimonial"]:nth-child(2):checked ~ .testimonial-avatars > label:nth-child(2),
+    input[name="testimonial"]:nth-child(3):checked ~ .testimonial-avatars > label:nth-child(3),
+    input[name="testimonial"]:nth-child(4):checked ~ .testimonial-avatars > label:nth-child(4),
+    input[name="testimonial"]:nth-child(5):checked ~ .testimonial-avatars > label:nth-child(5) {
+        transform: scale(1.1) translate(0,-0.5rem);
+        box-shadow: 0 13px 13px 0px rgba(0,0,0,.2);
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 1px;
+            height: 5rem;
+            background-color: var(--color-gray-light);
+            opacity: 1;
+        }
+    }
+
+    input[name="testimonial"]:nth-child(1):checked ~ .testimonials > blockquote:nth-child(1),
+    input[name="testimonial"]:nth-child(2):checked ~ .testimonials > blockquote:nth-child(2),
+    input[name="testimonial"]:nth-child(3):checked ~ .testimonials > blockquote:nth-child(3),
+    input[name="testimonial"]:nth-child(4):checked ~ .testimonials > blockquote:nth-child(4),
+    input[name="testimonial"]:nth-child(5):checked ~ .testimonials > blockquote:nth-child(5) {
+        display: block;
+    }
+}

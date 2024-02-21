@@ -21,6 +21,7 @@ body
             ul 
               li: a href="#caption-figures" Captions + Figures
               li: a href="#galleries" Image Galleries
+              li: a href="#testimonials" Testimonials
           li
             a href="#anchor-b" Pricing
           li
@@ -88,7 +89,7 @@ body
             h3 Feature 3
             p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
 
-  section.rounded.m-y-5.xs-flex-column data-section-type="gallery-text"
+  section.rounded.m-y-5.xs-flex-column.card data-section-type="gallery-text"
     input type='radio' name='gallery-text' value='1' id="gallery-text-1" checked='checked'
     input type='radio' name='gallery-text' value='2' id="gallery-text-2"
     input type='radio' name='gallery-text' value='3' id="gallery-text-3"
@@ -124,17 +125,17 @@ body
 
 
       .thumbnails 
-        label for="gallery-text-1"
+        label for="gallery-text-1" tabindex="0"
           img.rounded src="https://picsum.photos/id/18/400/400"
-        label for="gallery-text-2"
+        label for="gallery-text-2" tabindex="0"
           img.rounded src="https://picsum.photos/id/19/400/400"
-        label for="gallery-text-3"
+        label for="gallery-text-3" tabindex="0"
           img.rounded src="https://picsum.photos/id/20/400/400"
-        label for="gallery-text-4"
+        label for="gallery-text-4" tabindex="0"
           img.rounded src="https://picsum.photos/id/21/400/400"
-        label for="gallery-text-5"
+        label for="gallery-text-5" tabindex="0"
           img.rounded src="https://picsum.photos/id/22/400/400"
-        label for="gallery-text-6"
+        label for="gallery-text-6" tabindex="0"
           img.rounded src="https://picsum.photos/id/23/400/400"
 
     .gallery-text 
@@ -158,21 +159,21 @@ body
     input type='radio' name='gallery' value='12' id="gallery-12"
 
     .thumbnails 
-      label for="gallery-1"
+      label for="gallery-1" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/10/400/400"
-      label for="gallery-2"
+      label for="gallery-2" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/11/400/400"
-      label for="gallery-3"
+      label for="gallery-3" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/12/400/400"
-      label for="gallery-4"
+      label for="gallery-4" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/13/400/400"
-      label for="gallery-5"
+      label for="gallery-5" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/14/400/400"
-      label for="gallery-6"
+      label for="gallery-6" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/15/400/400"
-      label for="gallery-7"
+      label for="gallery-7" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/16/400/400"
-      label for="gallery-8"
+      label for="gallery-8" tabindex="0"
         img.rounded-xl src="https://picsum.photos/id/17/400/400"
 
     .gallery
@@ -223,6 +224,49 @@ body
           img src="https://picsum.photos/id/17/1200/1200"
           figcaption
             h3 Feature Details 8
+
+
+  section#testimonials.flex.flex-jcc.m-y-4: h2.tac.dots Testimonials and Reviews
+
+  section.rounded.m-y-5 data-section-type="testimonials"
+    input type='radio' name='testimonial' value='1' id="testimonials-1" checked='checked'
+    input type='radio' name='testimonial' value='2' id="testimonials-2"
+    input type='radio' name='testimonial' value='3' id="testimonials-3"
+    input type='radio' name='testimonial' value='4' id="testimonials-4"
+    input type='radio' name='testimonial' value='5' id="testimonials-5"
+
+    .testimonial-avatars 
+      label for="testimonials-1" tabindex="0"
+        img.round src="https://picsum.photos/id/237/100/100"
+      label for="testimonials-2" tabindex="0"
+        img.round src="https://picsum.photos/id/453/100/100"
+      label for="testimonials-3" tabindex="0"
+        img.round src="https://picsum.photos/id/602/100/100"
+      label for="testimonials-4" tabindex="0"
+        img.round src="https://picsum.photos/id/699/100/100"
+      label for="testimonials-5" tabindex="0"
+        img.round src="https://picsum.photos/id/669/100/100"
+
+    .testimonials
+      blockquote.card
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+        cite Author 1
+
+      blockquote.card
+        p Quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+        cite Author 2
+
+      blockquote.card
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+        cite Author 3
+
+      blockquote.card
+        p Quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+        cite Author 4
+
+      blockquote.card
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+        cite Author 5
 
   footer
     .container.sm-flex-column

@@ -708,8 +708,6 @@ input, button, textarea, select{
       -webkit-transition-duration: 0.01ms !important;
               transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
-  }
-  *, *::before, *::after {
       -webkit-transition: none;
       transition: none;
   }
@@ -862,6 +860,44 @@ h1.lines:after, h2.lines:after, h3.lines:after, h4.lines:after {
       border-bottom: 1px solid var(--decoration-color);
       border-top: 1px solid var(--decoration-color);
     }
+h1.dots, h2.dots, h3.dots, h4.dots {
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+h1.dots:before, h2.dots:before, h3.dots:before, h4.dots:before {
+      content: "";
+      z-index: 0;
+      position: absolute;
+      top: calc(50% - 3px);
+      right: 0rem;
+      width: 5px;
+      height: 5px;
+      background-color: var(--decoration-color);
+      border-radius: 50%;
+      -webkit-box-shadow: -12px 0px 0px 2px var(--decoration-color), -28px 0px 0px 4px var(--decoration-color);
+              box-shadow: -12px 0px 0px 2px var(--decoration-color), -28px 0px 0px 4px var(--decoration-color);
+    }
+h1.dots:after, h2.dots:after, h3.dots:after, h4.dots:after {
+      content: "";
+      z-index: 0;
+      position: absolute;
+      top: calc(50% - 3px);
+      left: 0rem;
+      width: 5px;
+      height: 5px;
+      background-color: var(--decoration-color);
+      border-radius: 50%;
+      -webkit-box-shadow: 12px 0px 0px 2px var(--decoration-color), 28px 0px 0px 4px var(--decoration-color);
+              box-shadow: 12px 0px 0px 2px var(--decoration-color), 28px 0px 0px 4px var(--decoration-color);
+    }
 html {
   /* scroll-padding-top: var(--nav-height); */
 }
@@ -910,6 +946,11 @@ body footer {
   -webkit-box-shadow: var(--shadow-small);
           box-shadow: var(--shadow-small);
   overflow: hidden;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-gray-light);
+  -webkit-box-shadow: 0 22px 18px -20px rgba(0,0,0,.2);
+          box-shadow: 0 22px 18px -20px rgba(0,0,0,.2);
 }
 @media screen and (max-width: 900px) {
     .sm-flex-column {
@@ -1360,7 +1401,7 @@ body > footer .container {
         }
     }
 [data-section-type="hero"] {
-  background-image: url(https://picsum.photos/id/110/1200/1200/);
+  background-image: url(https://picsum.photos/id/139/1200/1200/);
   background-position: center center;
   background-size: cover;
   padding: 4rem;
@@ -1758,3 +1799,110 @@ body > footer .container {
               flex: 1;
     }
   }
+[data-section-type="testimonials"] .testimonial-avatars {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 3rem;
+        margin-bottom: var(--spacing-xl);
+        gap: 1rem;
+
+        /* label {
+        } */
+    }
+[data-section-type="testimonials"] .testimonial-avatars label {
+            width: 8rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 2px solid #e0e0e0;
+            border: 2px solid var(--color-gray-light);
+            cursor: pointer;
+            -webkit-transition: border-color 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+            transition: border-color 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+            -webkit-transform: scale(1) translate(0,0);
+                    transform: scale(1) translate(0,0);
+        }
+[data-section-type="testimonials"] .testimonial-avatars label:hover {
+                -webkit-transform: translate(0,-0.5rem);
+                        transform: translate(0,-0.5rem)
+            }
+[data-section-type="testimonials"] .testimonial-avatars label:after {
+                content: "";
+                opacity: 0;
+                -webkit-transition: opacity 0.3s;
+                transition: opacity 0.3s;
+            }
+[data-section-type="testimonials"] > input[type="radio"] {
+        display: none;
+    }
+[data-section-type="testimonials"] .testimonials {
+        background-color: white;
+        z-index: 1;
+        position: relative;
+    }
+[data-section-type="testimonials"] .testimonials blockquote {
+        display: none;
+        padding: 3rem;
+        padding: var(--spacing-xl);
+        border-radius: 6px;
+        border-radius: var(--border-radius-m);
+        /* box-shadow: var(--shadow-small); */
+        background-color: white;
+        margin: 0;
+        border-left: 5px solid #047af8;
+        border-left: 5px solid var(--color-primary);
+    }
+[data-section-type="testimonials"] .testimonials blockquote p {
+            font-size: 2.4rem;
+            font-size: var(--font-size-l);
+            font-weight: 300;
+            font-weight: var(--font-weight-light);
+        }
+[data-section-type="testimonials"] .testimonials blockquote cite {
+            display: block;
+            margin-top: 1.5rem;
+            margin-top: var(--spacing-m);
+            font-size: 1.8rem;
+            font-size: var(--font-size-m);
+            font-weight: bold;
+            color: #777777;
+            color: var(--color-gray-dark);
+
+        }
+[data-section-type="testimonials"] input[name="testimonial"]:nth-child(1):checked ~ .testimonial-avatars > label:nth-child(1),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(2):checked ~ .testimonial-avatars > label:nth-child(2),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(3):checked ~ .testimonial-avatars > label:nth-child(3),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(4):checked ~ .testimonial-avatars > label:nth-child(4),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(5):checked ~ .testimonial-avatars > label:nth-child(5) {
+        -webkit-transform: scale(1.1) translate(0,-0.5rem);
+                transform: scale(1.1) translate(0,-0.5rem);
+        -webkit-box-shadow: 0 13px 13px 0px rgba(0,0,0,.2);
+                box-shadow: 0 13px 13px 0px rgba(0,0,0,.2);
+        position: relative;
+    }
+[data-section-type="testimonials"] input[name="testimonial"]:nth-child(1):checked ~ .testimonial-avatars > label:nth-child(1):after, [data-section-type="testimonials"] input[name="testimonial"]:nth-child(2):checked ~ .testimonial-avatars > label:nth-child(2):after, [data-section-type="testimonials"] input[name="testimonial"]:nth-child(3):checked ~ .testimonial-avatars > label:nth-child(3):after, [data-section-type="testimonials"] input[name="testimonial"]:nth-child(4):checked ~ .testimonial-avatars > label:nth-child(4):after, [data-section-type="testimonials"] input[name="testimonial"]:nth-child(5):checked ~ .testimonial-avatars > label:nth-child(5):after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 1px;
+            height: 5rem;
+            background-color: #e0e0e0;
+            background-color: var(--color-gray-light);
+            opacity: 1;
+        }
+[data-section-type="testimonials"] input[name="testimonial"]:nth-child(1):checked ~ .testimonials > blockquote:nth-child(1),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(2):checked ~ .testimonials > blockquote:nth-child(2),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(3):checked ~ .testimonials > blockquote:nth-child(3),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(4):checked ~ .testimonials > blockquote:nth-child(4),
+    [data-section-type="testimonials"] input[name="testimonial"]:nth-child(5):checked ~ .testimonials > blockquote:nth-child(5) {
+        display: block;
+    }

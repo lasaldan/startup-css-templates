@@ -122,4 +122,41 @@ h1, h2, h3, h4 {
       border-top: 1px solid var(--decoration-color);
     }
   }
+
+  &.dots {
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    width: fit-content;
+
+    &:before {
+      content: "";
+      z-index: 0;
+      position: absolute;
+      top: calc(50% - 3px);
+      right: 0rem;
+      width: 5px;
+      height: 5px;
+      background-color: var(--decoration-color);
+      border-radius: 50%;
+      box-shadow: -12px 0px 0px 2px var(--decoration-color), -28px 0px 0px 4px var(--decoration-color);
+    }
+
+    &:after {
+      content: "";
+      z-index: 0;
+      position: absolute;
+      top: calc(50% - 3px);
+      left: 0rem;
+      width: 5px;
+      height: 5px;
+      background-color: var(--decoration-color);
+      border-radius: 50%;
+      box-shadow: 12px 0px 0px 2px var(--decoration-color), 28px 0px 0px 4px var(--decoration-color);
+    }
+  }
 }
