@@ -37,3 +37,116 @@ layout:
     classes: lines
     content: Caption + Figures
     id: caption-figures
+
+  - type: caption-figure
+    title: Feature 1
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+    image: https://picsum.photos/id/4/1200/1200/
+
+  - type: figure-caption
+    title: Feature 2
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+    classes: bg
+    image: https://picsum.photos/id/5/1200/1200/
+
+  - type: caption-figure
+    title: Feature 3
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+    classes: bg-gray-light
+    image: https://picsum.photos/id/19/1200/1200/
+
+  - type: heading 
+    classes: braces round
+    content: Image Galleries
+    id: galleries
+
+  - type: slider 
+    classes: card
+    images: 
+      - image: https://picsum.photos/id/1/1200/1200/
+        title: Feature 1
+        content_classes: dark
+        content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+      - image: https://picsum.photos/id/2/1200/1200/
+        title: Feature 2
+        content_classes: left
+        content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+      - image: https://picsum.photos/id/3/1200/1200/
+        title: Feature 3
+        content_classes: right dark
+        content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+
+  - type: gallery-text
+    title: Feature 4
+    classes: card
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+    button: Learn More
+    button_url: "#"
+    images:
+      - image: https://picsum.photos/id/18/1200/1200/
+        thumbnail: https://picsum.photos/id/18/200/200/
+      - image: https://picsum.photos/id/19/1200/1200/
+        thumbnail: https://picsum.photos/id/19/200/200/
+      - image: https://picsum.photos/id/20/1200/1200/
+        thumbnail: https://picsum.photos/id/20/200/200/
+      - image: https://picsum.photos/id/21/1200/1200/
+        thumbnail: https://picsum.photos/id/21/200/200/
+        title: Feature 1
+      - image: https://picsum.photos/id/22/1200/1200/
+        thumbnail: https://picsum.photos/id/22/200/200/
+        title: Feature 2
+      - image: https://picsum.photos/id/23/1200/1200/
+        thumbnail: https://picsum.photos/id/23/200/200/
+        title: Feature 3
+
+  - type: gallery
+    classes: 
+    images: 
+      - image: https://picsum.photos/id/24/1200/1200/
+        thumbnail: https://picsum.photos/id/24/200/200/
+        title: Feature 1
+      - image: https://picsum.photos/id/25/1200/1200/
+        thumbnail: https://picsum.photos/id/25/200/200/
+        title: Feature 2
+      - image: https://picsum.photos/id/26/1200/1200/
+        thumbnail: https://picsum.photos/id/26/200/200/
+        title: Feature 3
+      - image: https://picsum.photos/id/27/1200/1200/
+        thumbnail: https://picsum.photos/id/27/200/200/
+        title: Feature 4
+      - image: https://picsum.photos/id/28/1200/1200/
+        thumbnail: https://picsum.photos/id/28/200/200/
+        title: Feature 5
+      - image: https://picsum.photos/id/29/1200/1200/
+        thumbnail: https://picsum.photos/id/29/200/200/
+        title: Feature 6
+      - image: https://picsum.photos/id/30/1200/1200/
+        thumbnail: https://picsum.photos/id/30/200/200/
+        title: Feature 7
+      - image: https://picsum.photos/id/31/1200/1200/
+        thumbnail: https://picsum.photos/id/31/200/200/
+        title: Feature 8
+
+  - type: heading 
+    classes: dots
+    content: Testimonials and Reviews
+    id: testimonials
+
+  - type: testimonials 
+    classes: 
+    items:
+      - name: John Doe 
+        content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+        image: https://picsum.photos/id/237/200/200/
+      - name: Jane Doe
+        content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        image: https://picsum.photos/id/453/200/200/
+      - name: John Smith
+        content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+        image: https://picsum.photos/id/602/200/200/
+      - name: Jane Smith
+        content: Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        image: https://picsum.photos/id/699/200/200/
+      - name: John Deere 
+        content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+        image: https://picsum.photos/id/669/200/200/

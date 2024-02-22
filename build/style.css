@@ -1752,6 +1752,8 @@ body > footer .container {
       transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
       cursor: pointer;
       opacity: 0.5;
+      max-height: 100%;
+      aspect-ratio: 1 / 1;
     }
 [data-section-type="gallery-text"] .thumbnails > *:hover {
         -webkit-transform: scale(1.05);

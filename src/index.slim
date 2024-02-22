@@ -37,245 +37,198 @@ body
                 a href="#{item["url"]}" = item["title"]
 
   - data["layout"].each do |section|
+    / HERO
+    / type: hero
+    / title: Large main text h1
+    / subtitle: Smaller secondary text h2
+    / content: Paragraph text p
+    / classes: Additional classes for styling the section
+    / image: Background image URL
     - if section["type"] == "hero"
-      section.flex.flex-column.flex-jcfe data-section-type="hero" style="background-image: url(#{section['image']})"
+      section.flex.flex-column.flex-jcfe data-section-type="hero" style="background-image: url(#{section['image']})" class="#{section['classes']}"
         h1 = section["title"]
         h2 = section["subtitle"]
         p.m-t-4 = section["content"]
 
+
+
+    / HEADING
+    / type: heading
+    / content: Heading text h2
+    / id: Section ID for fragment linking
+    / classes: Additional classes for styling the h2
     - if section["type"] == "heading"
       section.flex.flex-jcc.m-y-4 id="#{section['id']}"
         h2.tac class="#{section['classes']}" = section["content"]
         
 
 
-  section.rounded-xl.oh data-section-type="caption-figure"
-    figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
-      .flex-1.aspect-square: img.w-400.xs-full-width.block-shadow-small src="https://picsum.photos/id/4/800/800"
-      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
-        h3 Feature
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-
-  section.rounded.oh.m-y-4.bg data-section-type="caption-figure"
-    figure.flex.sm-flex-column.sm-flex-aic
-      .flex-1.aspect-square: img.w-400.xs-full-width.block-shadow-small src="https://picsum.photos/id/8/800/800"
-      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
-        h3 Feature
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-
-  section.rounded.oh.bg-gray-light data-section-type="caption-figure"
-    figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
-      .flex-1.aspect-square: img.w-400.xs-full-width.block-shadow-small src="https://picsum.photos/id/19/800/800"
-      figcaption.m-3.flex.flex-column.flex-jcc.flex-2
-        h3 Feature
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
+    / CAPTION FIGURE
+    / type: caption-figure
+    / image: Image URL
+    / title: Image caption h3
+    / classes: Additional classes for styling the section
+    / content: Image caption p
+    - if section["type"] == "caption-figure"
+      section.rounded-xl.oh data-section-type="caption-figure" class="#{section['classes']}"
+        figure.flex.flex-reverse.sm-flex-column.sm-flex-aic
+          .flex-1.aspect-square: img.w-400.xs-full-width.block-shadow-small src="#{section['image']}"
+          figcaption.m-3.flex.flex-column.flex-jcc.flex-2
+            h3 = section["title"]
+            p = section["content"]
 
 
-  section#galleries.flex.flex-jcc.m-y-4: h2.tac.braces.round Image Galleries
 
-  section.rounded.oh.m-y-5 data-section-type="slider"
-    .slide-window
-      input type='radio' name='slider' value='1' checked='checked'
-      input type='radio' name='slider' value='2'
-      input type='radio' name='slider' value='3'
-
-      .slides
-        figure
-          img src="https://picsum.photos/id/1/1200/1200"
-          figcaption.dark
-            h3 Feature 1
-            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-
-        figure
-          img src="https://picsum.photos/id/2/1200/1200"
-          figcaption.left
-            h3 Feature 2
-            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-
-        figure
-          img src="https://picsum.photos/id/3/1200/1200"
-          figcaption.right.dark
-            h3 Feature 3
-            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-
-  section.rounded.m-y-5.xs-flex-column.card data-section-type="gallery-text"
-    input type='radio' name='gallery-text' value='1' id="gallery-text-1" checked='checked'
-    input type='radio' name='gallery-text' value='2' id="gallery-text-2"
-    input type='radio' name='gallery-text' value='3' id="gallery-text-3"
-    input type='radio' name='gallery-text' value='4' id="gallery-text-4"
-    input type='radio' name='gallery-text' value='5' id="gallery-text-5"
-    input type='radio' name='gallery-text' value='6' id="gallery-text-6"
-
-    .gallery-wrapper
-      .gallery
-        figure
-          img src="https://picsum.photos/id/18/1600/800"
-
-        figure
-          img src="https://picsum.photos/id/19/800/800"
-
-        figure
-          img src="https://picsum.photos/id/20/1200/1200"
-
-        figure
-          img src="https://picsum.photos/id/21/1200/1200"
-          figcaption
-            h3 Feature Details 4
-
-        figure
-          img src="https://picsum.photos/id/22/1200/1200"
-          figcaption
-            h3 Feature Details 5
-
-        figure
-          img src="https://picsum.photos/id/23/1200/1200"
-          figcaption
-            h3 Feature Details 6
+    / FIGURE CAPTION
+    / type: figure-caption
+    / image: Image URL
+    / title: Image caption h3
+    / classes: Additional classes for styling the section
+    / content: Image caption p
+    - if section["type"] == "figure-caption"
+      section.rounded-xl.oh data-section-type="caption-figure" class="#{section['classes']}"
+        figure.flex.sm-flex-column.sm-flex-aic
+          .flex-1.aspect-square: img.w-400.xs-full-width.block-shadow-small src="#{section['image']}"
+          figcaption.m-3.flex.flex-column.flex-jcc.flex-2
+            h3 = section["title"]
+            p = section["content"]
 
 
-      .thumbnails 
-        label for="gallery-text-1" tabindex="0"
-          img.rounded src="https://picsum.photos/id/18/800/400"
-        label for="gallery-text-2" tabindex="0"
-          img.rounded src="https://picsum.photos/id/19/400/400"
-        label for="gallery-text-3" tabindex="0"
-          img.rounded src="https://picsum.photos/id/20/400/400"
-        label for="gallery-text-4" tabindex="0"
-          img.rounded src="https://picsum.photos/id/21/400/400"
-        label for="gallery-text-5" tabindex="0"
-          img.rounded src="https://picsum.photos/id/22/400/400"
-        label for="gallery-text-6" tabindex="0"
-          img.rounded src="https://picsum.photos/id/23/400/400"
 
-    .gallery-text 
-      h3 Feature Explanation 
-      p.m-y-2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-      a.button.m-t-2 Learn More
+    / SLIDER
+    / type: slider
+    / classes: Additional classes for styling the section
+    / images: Array of images (max 8)
+    /   - image: Slide background image URL
+    /     title: Slide title h3
+    /     content: Slide content p
+    /     content_classes: Additional classes for styling the content
+    - if section["type"] == "slider"
+      - if section["images"].length > 8
+        - section["images"] = section["images"].slice(0, 8)
+      section.rounded.oh.m-y-5 data-section-type="slider" class="#{section['classes']}"
+        .slide-window 
+          - section["images"].each_with_index do |slide, index|
+            - if index == 0
+              input type='radio' name='slider' value='#{index + 1}' checked='checked'
+            - else
+              input type='radio' name='slider' value='#{index + 1}'
 
-  section.rounded.m-y-5 data-section-type="gallery"
-    input type='radio' name='gallery' value='0' id="gallery-0" checked='checked'
-    input type='radio' name='gallery' value='1' id="gallery-1"
-    input type='radio' name='gallery' value='2' id="gallery-2"
-    input type='radio' name='gallery' value='3' id="gallery-3"
-    input type='radio' name='gallery' value='4' id="gallery-4"
-    input type='radio' name='gallery' value='5' id="gallery-5"
-    input type='radio' name='gallery' value='6' id="gallery-6"
-    input type='radio' name='gallery' value='7' id="gallery-7"
-    input type='radio' name='gallery' value='8' id="gallery-8"
-    input type='radio' name='gallery' value='9' id="gallery-9"
-    input type='radio' name='gallery' value='10' id="gallery-10"
-    input type='radio' name='gallery' value='11' id="gallery-11"
-    input type='radio' name='gallery' value='12' id="gallery-12"
-
-    .thumbnails 
-      label for="gallery-1" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/10/400/400"
-      label for="gallery-2" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/11/400/400"
-      label for="gallery-3" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/12/400/400"
-      label for="gallery-4" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/13/400/400"
-      label for="gallery-5" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/14/400/400"
-      label for="gallery-6" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/15/400/400"
-      label for="gallery-7" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/16/400/400"
-      label for="gallery-8" tabindex="0"
-        img.rounded-xl src="https://picsum.photos/id/17/400/400"
-
-    .gallery
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/10/1200/1200"
-          figcaption
-            h3 Feature Details 1
-
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/11/1200/1200"
-          figcaption
-            h3 Feature Details 2
-
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/12/1200/1200"
-          figcaption
-            h3 Feature Details 3
-
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/13/1200/1200"
-          figcaption
-            h3 Feature Details 4
-
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/14/1200/1200"
-          figcaption
-            h3 Feature Details 5
-
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/15/1200/1200"
-          figcaption
-            h3 Feature Details 6
-
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/16/1200/1200"
-          figcaption
-            h3 Feature Details 7
-
-      label for="gallery-0"
-        figure
-          img src="https://picsum.photos/id/17/1200/1200"
-          figcaption
-            h3 Feature Details 8
+          .slides
+            - section["images"].each_with_index do |slide, index|
+              figure 
+                img src="#{slide['image']}"
+                figcaption class="#{slide['content_classes']}"
+                  h3 = slide["title"]
+                  p = slide["content"]
 
 
-  section#testimonials.flex.flex-jcc.m-y-4: h2.tac.dots Testimonials and Reviews
 
-  section.rounded.m-y-5 data-section-type="testimonials"
-    input type='radio' name='testimonial' value='1' id="testimonials-1" checked='checked'
-    input type='radio' name='testimonial' value='2' id="testimonials-2"
-    input type='radio' name='testimonial' value='3' id="testimonials-3"
-    input type='radio' name='testimonial' value='4' id="testimonials-4"
-    input type='radio' name='testimonial' value='5' id="testimonials-5"
+    / GALLERY TEXT
+    / type: gallery-text
+    / classes: Additional classes for styling the section
+    / title: Gallery title h3
+    / content: Gallery content p
+    / button: Button text
+    / button_url: Button URL
+    / images: Array of images (max 6)
+    /   - image: Image URL
+    /     thumbnail: Thumbnail URL
+    /     title: Image caption h3
+    - if section["type"] == "gallery-text"
+      - if section["images"].length > 6
+        - section["images"] = section["images"].slice(0, 6)
+      section.rounded.m-y-5.xs-flex-column data-section-type="gallery-text" class="#{section['classes']}"
+        - section["images"].each_with_index do |image, index|
+          - if index == 0
+            input type='radio' name='gallery-text' value='#{index + 1}' id="gallery-text-#{index + 1}" checked='checked'
+          - else
+            input type='radio' name='gallery-text' value='#{index + 1}' id="gallery-text-#{index + 1}"
+            
+        .gallery-wrapper
+          .gallery
+            - section["images"].each_with_index do |image, index|
+              figure
+                img src="#{image['image']}"
+                - if image["title"]
+                  figcaption
+                    h3 = image["title"]
 
-    .testimonial-avatars 
-      label for="testimonials-1" tabindex="0"
-        img.round src="https://picsum.photos/id/237/100/100"
-      label for="testimonials-2" tabindex="0"
-        img.round src="https://picsum.photos/id/453/100/100"
-      label for="testimonials-3" tabindex="0"
-        img.round src="https://picsum.photos/id/602/100/100"
-      label for="testimonials-4" tabindex="0"
-        img.round src="https://picsum.photos/id/699/100/100"
-      label for="testimonials-5" tabindex="0"
-        img.round src="https://picsum.photos/id/669/100/100"
+          .thumbnails 
+            - section["images"].each_with_index do |image, index|
+              label for="gallery-text-#{index + 1}" tabindex="0"
+                img.rounded src="#{image['thumbnail']}"
 
-    .testimonials
-      blockquote.card
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-        cite Author 1
+        .gallery-text 
+          h3 = section["title"]
+          p.m-y-2 = section["content"]
+          - if section["button"]
+            a.button.m-t-2 href="#{section["button_url"]}" = section["button"]
 
-      blockquote.card
-        p Quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-        cite Author 2
 
-      blockquote.card
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-        cite Author 3
 
-      blockquote.card
-        p Quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-        cite Author 4
+    / GALLERY
+    / type: gallery
+    / classes: Additional classes for styling the section
+    / images: Array of images (max 12, evens work best for layout)
+    /   - image: Image URL
+    /     thumbnail: Thumbnail URL
+    /     title: Image caption h3
+    - if section["type"] == "gallery"
+      - if section["images"].length > 12
+        - section["images"] = section["images"].slice(0, 12)
+      
+      section.rounded.m-y-5 data-section-type="gallery" class="#{section['classes']}"
+        input type='radio' name='gallery' value='0' id="gallery-0" checked='checked'
+        - section["images"].each_with_index do |image, index|
+          input type='radio' name='gallery' value='#{index + 1}' id="gallery-#{index + 1}"
+            
+        .thumbnails 
+          - section["images"].each_with_index do |image, index|
+            label for="gallery-#{index + 1}" tabindex="0"
+              img.rounded-xl src="#{image['thumbnail']}"
+             
+        .gallery
+          - section["images"].each_with_index do |image, index|
+            label for="gallery-0"
+              figure
+                img src="#{image['image']}"
+                - if image["title"]
+                  figcaption
+                    h3 = image["title"]
 
-      blockquote.card
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus incidunt aliquam nam accusantium fugit esse distinctio cum, quidem officiis pariatur illo, voluptatum sapiente ullam atque, accusamus tempore sunt qui.
-        cite Author 5
+
+
+    / TESTIMONIALS
+    / type: testimonials
+    / classes: Additional classes for styling the section
+    / items: (max 5)
+    /   - name: author cite
+    /   - content: quote p
+    /   - image: Author image URL
+    - if section["type"] == "testimonials"
+      - if section["items"].length > 5
+        - section["items"] = section["items"].slice(0, 5)
+
+      section.rounded.m-y-5 data-section-type="testimonials" class="#{section['classes']}"
+        - section["items"].each_with_index do |testimonial, index|
+          - if index == 0
+            input type='radio' name='testimonial' value='#{index + 1}' id="testimonials-#{index + 1}" checked='checked'
+          - else
+            input type='radio' name='testimonial' value='#{index + 1}' id="testimonials-#{index + 1}"
+
+        .testimonial-avatars 
+          - section["items"].each_with_index do |testimonial, index|
+            label for="testimonials-#{index + 1}" tabindex="0"
+              img.round src="#{testimonial['image']}"
+              
+        .testimonials
+          - section["items"].each_with_index do |testimonial, index|
+            blockquote.card
+              p = testimonial["content"]
+              cite = testimonial["name"]
+
+
 
   footer
     .container.sm-flex-column
@@ -309,9 +262,3 @@ body
         br
         br
         p.font-light &copy; 2024 Startup Template
-
-  / section.m-y-4.flex.flex-jcsb.sm-flex-column
-  /   img.grayscale.rotate-left-sm.shadow-large src="https://picsum.photos/id/15/300/300"
-  /   img.round.shadow-medium.blur src="https://picsum.photos/id/16/300/300"
-  /   img.sepia.rounded-xl.rotate-right-xs.shadow-small src="https://picsum.photos/id/17/300/300"
-    
