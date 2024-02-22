@@ -1,0 +1,39 @@
+metadata: 
+  title: CSS Startup Template
+  description: The CSS Startup Template is the easiest way to get your new project online. 
+  keywords: startup, template, marketing
+
+navigation: 
+  logo: logo.svg
+  logo_title: Marketing
+  logo_url: ""
+  items: 
+    - title: Features 
+      items:
+        - title: Captions + Figures 
+          url: "#caption-figures"
+        - title: Image Galleries
+          url: "#galleries"
+        - title: Testimonials
+          url: "#testimonials"
+    - title: Pricing
+      url: "#pricing"
+    - title: Contact
+      url: "#contact"
+    - title: Sign Up
+      url: /sign-up
+      classes: button
+  
+
+# layout keys are: [hero, heading, caption-figure, slider, gallery-text, gallery, testimonials, footer]
+layout:
+  - type: hero
+    title: Startup CSS Template
+    subtitle: The easiest way to start
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+    image: https://picsum.photos/id/139/1200/1200/
+
+  - type: heading 
+    classes: lines
+    content: Caption + Figures
+    id: caption-figures
