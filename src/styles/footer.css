@@ -7,6 +7,10 @@ body > footer {
         gap: 4em;
         margin: 0 auto;
         padding: 0 var(--spacing-m);
+
+        .logo {
+            max-height: 4em;
+        }
     }
 
     @media screen and (max-width: 900px) {

@@ -2,6 +2,10 @@ metadata:
   title: CSS Startup Template
   description: The CSS Startup Template is the easiest way to get your new project online. 
   keywords: startup, template, marketing
+  site_name: CSS Startup Template
+  email: startup@example.com
+  phone: 123-456-7890
+  address: 1234 Main St, Anytown, USA
 
 navigation: 
   logo: logo.svg
@@ -150,3 +154,14 @@ layout:
       - name: John Deere 
         content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
         image: https://picsum.photos/id/669/200/200/
+
+  - type: footer
+    links: 
+      - name: Privacy Policy 
+        url: "#"
+      - name: Terms of Service 
+        url: "#"
+      - name: Refund Policy 
+        url: "#"
+      - name: FAQ 
+        url: "#"

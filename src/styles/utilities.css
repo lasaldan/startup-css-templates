@@ -79,7 +79,7 @@
 .hidden {
   display: none;
 }
-.visible {
+.visible, .db {
   display: block;
 }
 .invisible {

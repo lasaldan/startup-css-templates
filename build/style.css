@@ -174,7 +174,7 @@
 .hidden {
   display: none;
 }
-.visible {
+.visible, .db {
   display: block;
 }
 .invisible {
@@ -1394,6 +1394,9 @@ body > footer .container {
         padding: 0 1.5rem;
         padding: 0 var(--spacing-m);
     }
+body > footer .container .logo {
+            max-height: 4em;
+        }
 @media screen and (max-width: 900px) {
         body > footer .container {
             padding: 0 4rem;
