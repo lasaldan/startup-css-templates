@@ -65,7 +65,7 @@ layout:
     id: galleries
 
   - type: slider 
-    classes: card
+    classes: 
     images: 
       - image: https://picsum.photos/id/1/1200/1200/
         title: Feature 1

@@ -106,7 +106,7 @@ body
     - if section["type"] == "slider"
       - if section["images"].length > 8
         - section["images"] = section["images"].slice(0, 8)
-      section.rounded.oh.m-y-5 data-section-type="slider" class="#{section['classes']}"
+      section.rounded.oh data-section-type="slider" class="#{section['classes']}"
         .slide-window 
           - section["images"].each_with_index do |slide, index|
             - if index == 0
@@ -138,7 +138,7 @@ body
     - if section["type"] == "gallery-text"
       - if section["images"].length > 6
         - section["images"] = section["images"].slice(0, 6)
-      section.rounded.m-y-5.xs-flex-column data-section-type="gallery-text" class="#{section['classes']}"
+      section.rounded.xs-flex-column data-section-type="gallery-text" class="#{section['classes']}"
         - section["images"].each_with_index do |image, index|
           - if index == 0
             input type='radio' name='gallery-text' value='#{index + 1}' id="gallery-text-#{index + 1}" checked='checked'
@@ -178,7 +178,7 @@ body
       - if section["images"].length > 12
         - section["images"] = section["images"].slice(0, 12)
       
-      section.rounded.m-y-5 data-section-type="gallery" class="#{section['classes']}"
+      section.rounded data-section-type="gallery" class="#{section['classes']}"
         input type='radio' name='gallery' value='0' id="gallery-0" checked='checked'
         - section["images"].each_with_index do |image, index|
           input type='radio' name='gallery' value='#{index + 1}' id="gallery-#{index + 1}"
@@ -210,7 +210,7 @@ body
       - if section["items"].length > 5
         - section["items"] = section["items"].slice(0, 5)
 
-      section.rounded.m-y-5 data-section-type="testimonials" class="#{section['classes']}"
+      section.rounded.m-t-2 data-section-type="testimonials" class="#{section['classes']}"
         - section["items"].each_with_index do |testimonial, index|
           - if index == 0
             input type='radio' name='testimonial' value='#{index + 1}' id="testimonials-#{index + 1}" checked='checked'
